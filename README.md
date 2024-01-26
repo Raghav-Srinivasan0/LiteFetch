@@ -23,7 +23,7 @@ If you want it to run on each new shell instance, put the following line at the 
 ```bash
 fetch [path to art]
 ```
-
+![](LiteFetch.gif)
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
