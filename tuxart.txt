@@ -1,0 +1,16 @@
+         ~k_nnnn_         ~mUptime:~r ~u
+        ~kdGGGGMMb        ~nProcs:~r ~p
+       ~k@p~qp~~qMb       ~lTotal Ram:~r ~t
+       ~kM~r|@||@)~k M|       ~dFree Ram:~r ~f
+       ~k@,~y----~k.JM|
+      ~kJS^~y\__/~k  qKL
+     ~kdZP        qKRb
+    ~kdZP          qKKb
+   ~kfZP            SMMb
+   ~kHZM            MMMM
+   ~kFqM            MMMM
+ ~y__| ".        |\~kdS"qML
+ ~y|    `.       | `' \~kZq
+~y_)      \.___.,|     .'
+~y\____   )~kMMMMMP~y|   .'
+     ~y`-'       `--'
