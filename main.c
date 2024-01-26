@@ -48,7 +48,7 @@ int main(int argc, char** argv)
     if (argc >= 2)
         f = fopen(argv[1],"r");
     else
-        f = fopen("art.txt","r");
+        f = fopen("/bin/art.txt","r");
     if (f == NULL)
     {
         printf(RED);
