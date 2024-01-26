@@ -4,6 +4,41 @@
 #include <stdbool.h>
 #include "main.h"
 
+void ram_handler(unsigned long ram)
+{
+    float new_ram = (float)ram;
+    unsigned int count = 0;
+    char* postfix;
+    while (new_ram >= 1000)
+    {
+        new_ram /= 1000;
+        count++;
+    }
+    switch(count)
+    {
+        case 0: postfix = "";
+                break;
+        case 1: postfix = "KB";
+                break;
+        case 2: postfix = "MB";
+                break;
+        case 3: postfix = "GB";
+                break;
+        case 4: postfix = "TB";
+                break;
+        default: postfix = "ERROR";
+    }
+    printf("%0.3f %s", new_ram, postfix);
+}
+
+void time_handler(long uptime)
+{
+    unsigned long hours = uptime/3600;
+    unsigned short minutes = (uptime%3600)/60;
+    unsigned short seconds = (uptime%60);
+    printf("%lu:%hu:%hu",hours,minutes,seconds);
+}
+
 int main(int argc, char** argv)
 {
 	struct sysinfo info;
@@ -31,17 +66,17 @@ int main(int argc, char** argv)
         {
             switch((char)c)
             {
-                case 'u': printf("%ld",info.uptime);
+                case 'u': time_handler(info.uptime);
                           break;
                 case 'p': printf("%hu",info.procs);
                           break;
-                case 't': printf("%lu",info.totalram);
+                case 't': ram_handler(info.totalram);
                           break;
-                case 'f': printf("%lu",info.freeram);
+                case 'f': ram_handler(info.freeram);
                           break;
-                case 's': printf("%lu",info.sharedram);
+                case 's': ram_handler(info.sharedram);
                           break;
-                case 'b': printf("%lu",info.bufferram);
+                case 'b': ram_handler(info.bufferram);
                           break;
                 case 'r': printf(RESET);
                           break;
