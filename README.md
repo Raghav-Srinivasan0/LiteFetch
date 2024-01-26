@@ -18,6 +18,7 @@ sudo mv fetch \bin\fetch
 fetch [path to art]
 ```
 If following the installation instructions above, [path to art] is \bin\art.txt
+If the art.txt file is in /bin/art.txt, you can omit [path to art]
 
 If you want it to run on each new shell instance, put the following line at the bottom of .bashrc or .zshrc
 ```bash
