@@ -1,9 +1,9 @@
        ~m_~d         ~r|| ~gUptime:~r ~u
       ~m|-|~d        ~r|| ~yTotal Ram:~r ~t
   ~d____~m| |~d____    ~r|| ~lFree Ram:~r ~f
- ~d/   _~m| |~d_   \   ~r// ~nProcs:~r ~p
-~d|  / ,~m| |~d. \  |~r_//
-~d| ( ( ~m'-'~d ) ) |~r-'
+ ~d/   _~m| |~d_   \   ~r// ~mShared Ram:~r ~s
+~d|  / ,~m| |~d. \  |~r_//  ~nBuffer Ram:~r ~b
+~d| ( ( ~m'-'~d ) ) |~r-'   ~gProcs:~r ~p
 ~d|  \ `'"'' /  |
 ~d|   `-----'   ;
 ~d|\___________/|
